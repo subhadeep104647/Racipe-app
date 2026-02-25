@@ -92,3 +92,83 @@ body{
     align-items: center;
     margin-top: 10px;
 }
+
+footer{
+    background-color: var(--nav);
+    margin-top: 10px;
+    border-radius: 5px;
+    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0px;
+    padding: 20px 30px;
+}
+
+.text{
+    color: var(--font);
+    font-family: Gravitas One;
+    font-size: 30px;
+    font-weight: 550;
+    letter-spacing: 1.5;
+}
+
+.thank{
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.socal{
+    width: 200px;
+    height: 50px;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+}
+
+.card1{
+    display: flex;
+
+
+    margin-top: 10px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.card2{
+    display: flex;
+
+
+    margin-top: 10px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.card3{
+    display: flex;
+
+
+    margin-top: 10px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.card4{
+    display: flex;
+
+
+    margin-top: 10px;
+    font-family: poppins;
+    font-weight: 500;
+}
