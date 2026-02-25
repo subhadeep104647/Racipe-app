@@ -1,0 +1,83 @@
+:root{
+    --nav: #C7EABB;
+    --body: #ffffff;
+    --font: #25343F;
+
+}
+
+body{
+    font-family: poppins;
+    background-color: var(--body);
+}
+
+.navbar{
+    background-color: var(--nav);
+    color: var(--font);
+    padding: 20px 30px;
+    max-width: 1550px;
+    height: 40px;
+    margin:  0 auto;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
+    border-radius: 2px solid var(--font);
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family:Gravitas One;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    color: var(--font);
+}
+
+.menu{
+    list-style: none;
+
+    display: flex;
+    gap: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--font);
+    font-size: 20px;
+    font-weight: 450;
+    letter-spacing: 0.7px;
+}
+
+.menu a.active{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    color: #005F02;
+
+}
+
+.search {
+    background-color: var(--nav);
+    width: 400px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.search ::placeholder {
+    color: var(--font);
+    text-align: center;
+}
+
+.contact-btn{
+    text-decoration: none;
+    background: #049907;
+    color: var(--body);
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.707);
+    font-size: 15px;
+    font-weight: 500;
+}
