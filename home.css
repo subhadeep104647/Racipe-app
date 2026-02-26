@@ -14,6 +14,7 @@ body{
 }
 
 .navbar{
+    background: url('glass2.png') no-repeat;
     color: var(--font);
     padding: 20px 30px;
     max-width: 1550px;
@@ -93,7 +94,7 @@ body{
 .hero-top{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 
@@ -101,6 +102,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: left;
+    margin-top: 60px;
 }
 .rigt1{
     display: flex;
@@ -124,6 +126,7 @@ body{
     color: var(--font);
     letter-spacing: 0.7px;
     line-height: 1.4;
+    font-size: 55px;
 }
 
 .light{
@@ -162,10 +165,11 @@ body{
     background: none;
     border-radius: 10px;
     padding: 10px;
-    border: 1px solid var(--font);
+    border: 0px solid var(--font);
     height: 300px;
     width: 300px;
     margin-left: 180px;
+    margin-top: 30px;
         
     display: flex;
     flex-direction: column;
@@ -177,7 +181,7 @@ body{
     background: none;
     border-radius: 10px;
     padding: 20px;
-    border: 1px solid var(--font);
+    border: 0px solid var(--font);
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
@@ -193,10 +197,11 @@ body{
     background: none;
     border-radius: 10px;
     padding: 10px;
-    border: 1px solid var(--font);
+    border: 0px solid var(--font);
     width: 300px;
     height: 300px;
     margin-right: 200px;
+    margin-top: 30px;
         
     display: flex;
     flex-direction: column;
@@ -285,4 +290,36 @@ footer{
     margin-top: 10px;
     font-family: poppins;
     font-weight: 500;
+}
+
+.hero-ctas{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 26px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.btn-primary2{
+    text-decoration: none;
+    background: linear-gradient(90deg, #82fc60, #02bb05);
+    padding: 10px 20px;
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 35px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 8px 22px rgb(45, 124, 225, 0.16);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
 }

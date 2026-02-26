@@ -14,6 +14,7 @@ body{
 }
 
 .navbar{
+    background: url('glass2.png') no-repeat;
     color: var(--font);
     padding: 20px 30px;
     max-width: 1550px;
@@ -87,9 +88,10 @@ body{
 
 .hero-middle{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
     gap: 20px;
     padding: 0 0 10px 10px;
+    margin-top: 40px;
 }
 .card{
     background: none;
@@ -110,6 +112,10 @@ body{
 a{
     text-decoration: none;
     color: var(--font);
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 450;
+    letter-spacing: 0.8px;
 }
 .btn{
     display: inline-block;
@@ -124,7 +130,7 @@ img{
 }
 
 img:hover{
-    transform: scale(1.10);
+    transform: scale(1.05);
     z-index: 10;
 }
 
@@ -209,4 +215,36 @@ footer{
     margin-top: 10px;
     font-family: poppins;
     font-weight: 500;
+}
+
+.hero-ctas{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 26px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.btn-primary2{
+    text-decoration: none;
+    background: linear-gradient(90deg, #82fc60, #02bb05);
+    padding: 10px 20px;
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 35px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 8px 22px rgb(45, 124, 225, 0.16);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
 }
