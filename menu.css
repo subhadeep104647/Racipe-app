@@ -6,12 +6,14 @@
 }
 
 body{
+    background: url('body1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: poppins;
     background-color: var(--body);
 }
 
 .navbar{
-    background-color: var(--nav);
     color: var(--font);
     padding: 20px 30px;
     max-width: 1550px;
@@ -60,10 +62,11 @@ body{
 }
 
 .search {
-    background-color: var(--nav);
+    background-color: var(--body);
     width: 400px;
     height: 25px;
     border-radius: 20px;
+    text-align: center;
 }
 
 .search ::placeholder {
@@ -79,5 +82,99 @@ body{
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.707);
     font-size: 15px;
+    font-weight: 500;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer{
+    background: url('footer.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: var(--body);
+    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0px;
+    padding: 20px 30px;
+}
+
+.text{
+    color: var(--body);
+    font-family: Gravitas One;
+    font-size: 30px;
+    font-weight: 550;
+    letter-spacing: 1.5;
+}
+
+.thank{
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.socal{
+    width: 200px;
+    height: 50px;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+}
+
+.card1{
+    display: flex;
+
+
+    margin-top: 10px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.card2{
+    display: flex;
+
+
+    margin-top: 10px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.card3{
+    display: flex;
+
+
+    margin-top: 10px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.card4{
+    display: flex;
+
+
+    margin-top: 10px;
+    font-family: poppins;
     font-weight: 500;
 }
