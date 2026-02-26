@@ -1,0 +1,39 @@
+{
+  "id": 2,
+  "name": "Litti Chokha",
+  "region": "Bihari",
+  "description": "Wheat balls stuffed with spiced sattu served with mashed vegetables.",
+  "prep_time": "30 minutes",
+  "cook_time": "30 minutes",
+  "servings": 4,
+  "ingredients": {
+    "litti": [
+      "2 cups wheat flour",
+      "1 cup sattu",
+      "1 chopped onion",
+      "2 tbsp mustard oil",
+      "1 tsp ajwain",
+      "1 tsp lemon juice",
+      "Salt to taste",
+      "Water as needed"
+    ],
+    "chokha": [
+      "1 large brinjal",
+      "2 boiled potatoes",
+      "2 tomatoes",
+      "1 chopped onion",
+      "2 green chilies",
+      "1 tbsp mustard oil",
+      "Salt to taste"
+    ]
+  },
+  "instructions": [
+    "Prepare dough using wheat flour, salt, and water. Rest 20 minutes.",
+    "Mix sattu, onion, mustard oil, ajwain, lemon juice, and salt.",
+    "Stuff dough balls with sattu mixture.",
+    "Bake at 180°C for 25-30 minutes.",
+    "Roast brinjal and tomatoes directly on flame.",
+    "Mash with potatoes, onion, green chilies, mustard oil, and salt.",
+    "Serve litti dipped in ghee with chokha."
+  ]
+}

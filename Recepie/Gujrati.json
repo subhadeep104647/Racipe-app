@@ -1,0 +1,35 @@
+{
+  "id": 3,
+  "name": "Khaman Dhokla",
+  "region": "Gujarati",
+  "description": "Soft and spongy steamed gram flour cake.",
+  "prep_time": "10 minutes",
+  "cook_time": "20 minutes",
+  "servings": 4,
+  "ingredients": {
+    "batter": [
+      "1 cup besan",
+      "1 tsp fruit salt (Eno)",
+      "1 tsp sugar",
+      "1/2 tsp turmeric",
+      "1 tbsp lemon juice",
+      "Salt to taste",
+      "Water as required"
+    ],
+    "tempering": [
+      "1 tsp mustard seeds",
+      "Curry leaves",
+      "2 green chilies",
+      "1/4 cup water with sugar"
+    ]
+  },
+  "instructions": [
+    "Mix besan, salt, turmeric, sugar, lemon juice and water to form smooth batter.",
+    "Grease steaming tray.",
+    "Add fruit salt and mix gently.",
+    "Steam for 15-20 minutes.",
+    "Prepare tempering with mustard seeds, curry leaves and green chilies.",
+    "Add sugar water and pour over steamed dhokla.",
+    "Cut into pieces and serve."
+  ]
+}

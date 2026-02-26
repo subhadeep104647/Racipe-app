@@ -1,0 +1,27 @@
+{
+  "id": 4,
+  "name": "Puran Poli",
+  "region": "Marathi",
+  "description": "Sweet stuffed flatbread made with chana dal and jaggery.",
+  "prep_time": "20 minutes",
+  "cook_time": "30 minutes",
+  "servings": 4,
+  "ingredients": [
+    "1 cup chana dal",
+    "1 cup jaggery",
+    "1 tsp cardamom powder",
+    "2 cups wheat flour",
+    "Ghee as required",
+    "Water as needed"
+  ],
+  "instructions": [
+    "Pressure cook chana dal for 2 whistles.",
+    "Drain and mash the dal.",
+    "Cook mashed dal with jaggery until thick.",
+    "Add cardamom powder and let cool.",
+    "Prepare soft dough with wheat flour and water.",
+    "Stuff sweet mixture inside dough ball.",
+    "Roll gently and cook on tawa with ghee.",
+    "Serve hot."
+  ]
+}

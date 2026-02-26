@@ -1,0 +1,35 @@
+{
+  "id": 5,
+  "name": "Masala Dosa",
+  "region": "South Indian",
+  "description": "Crispy fermented rice crepe filled with spiced potato mixture.",
+  "prep_time": "8 hours (including fermentation)",
+  "cook_time": "20 minutes",
+  "servings": 4,
+  "ingredients": {
+    "batter": [
+      "2 cups rice",
+      "1/2 cup urad dal",
+      "1 tsp fenugreek seeds",
+      "Salt to taste"
+    ],
+    "filling": [
+      "3 boiled potatoes",
+      "1 sliced onion",
+      "1 tsp mustard seeds",
+      "Curry leaves",
+      "1/2 tsp turmeric",
+      "2 tbsp oil"
+    ]
+  },
+  "instructions": [
+    "Soak rice, urad dal and fenugreek seeds for 6 hours.",
+    "Grind into smooth batter and ferment overnight.",
+    "Heat tawa and spread batter thinly.",
+    "Drizzle oil and cook until crispy.",
+    "Prepare filling by tempering mustard seeds and curry leaves.",
+    "Add onions, turmeric and mashed potatoes.",
+    "Place filling inside dosa and fold before serving."
+  ],
+  "serve_with": ["Coconut chutney", "Sambar"]
+}

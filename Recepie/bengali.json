@@ -1,0 +1,29 @@
+{
+  "id": 1,
+  "name": "Shorshe Ilish",
+  "region": "Bengali",
+  "description": "Hilsa fish cooked in traditional mustard gravy.",
+  "prep_time": "15 minutes",
+  "cook_time": "15 minutes",
+  "servings": 4,
+  "ingredients": [
+    "4 pieces Hilsa fish",
+    "3 tbsp mustard seeds (yellow + black)",
+    "2 green chilies",
+    "1/2 tsp turmeric powder",
+    "Salt to taste",
+    "3 tbsp mustard oil",
+    "1/2 cup warm water"
+  ],
+  "instructions": [
+    "Soak mustard seeds in warm water for 15 minutes.",
+    "Grind mustard seeds with green chilies and salt into a smooth paste.",
+    "Rub fish with salt and turmeric. Rest for 10 minutes.",
+    "Heat mustard oil until smoking, then reduce flame.",
+    "Add mustard paste and water. Cook for 3-4 minutes.",
+    "Add fish pieces and cover.",
+    "Cook on low flame for 8-10 minutes.",
+    "Garnish with slit green chilies and drizzle raw mustard oil before serving."
+  ],
+  "serve_with": ["Steamed rice"]
+}
