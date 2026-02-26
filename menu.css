@@ -85,15 +85,47 @@ body{
     font-weight: 500;
 }
 
-.box{
+.hero-middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 0 10px 10px;
+}
+.card{
+    background: none;
+    border-radius: 10px;
+    padding: 5px;
+        
     display: flex;
     flex-direction: column;
-    height: 300px;
-    border: 2px solid black;
-    border-radius: 10px;
-    justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    gap: 5px;
+}
+
+.btn-row{
+    display: flex;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--font);
+}
+.btn{
+    display: inline-block;
+    padding: 12px 26px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    
+}
+img{
+    border-radius: 15px;
+}
+
+img:hover{
+    transform: scale(1.10);
+    z-index: 10;
 }
 
 footer{
