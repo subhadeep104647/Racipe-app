@@ -17,7 +17,7 @@
         </div>
         <ul class="menu">
             <li><a href="home.html" class="active">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="menu.html">State</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
 
@@ -28,37 +28,157 @@
 
             <div class="left1">
                <div class="text">
-                <span class="bold">Real<br>Indian flavors</span><br>
-                <span class="light"></span>
+                <span class="bold">Discover Authentic <br>Indian Recipes <br>with a Modern Touch</span><br>
+                <span class="light">Loved by food enthusiasts for delivering an authentic Indian culinary experience</span>
                </div>
             </div>
             
             <div class="right1">
                <img src="India.png" alt="" height="450px" width="450px" class="img1">
+               <div class="price"></div>
             </div>
         </div>
 
         <div class="hero-bottom">
             <div class="left2">
                 <img src="momo-removebg-preview.png" alt="" height="200px" width="200px">
-                <div class="price"></div>
+                <div class="price">Veg Stream Momo</div>
             </div>
 
             <div class="middle">
                 <img src="Biryani.png" alt=""height="250px" width="250px">
-                <div class="price"></div>
+                <div class="price">Chicken Biryani</div>
             </div>
 
             <div class="right2">
                 <img src="Dosa.png" alt=""height="250px" width="300px">
-                <div class="price"></div>
+                <div class="price">Masala Dosa</div>
             </div>
         </div>
     </div>
 
-    <div class="hero-ctas">
-        <a href="https://web.whatsapp.com/" class="btn-primary2">Chat</a>
+    <div class="hero-middle">
+
+        <div class="card">
+            <img src="Bengali.jpeg" alt="" height="400px" width="800px">
+            <div class="button-row">
+                <a href=".html" class="btn-pink">Bengali</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Bihar.jpeg" alt="" height="400px" width="800px">
+            <div class="button-row">
+                <a href=".html" class="btn-pink">Bihari</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Maharashtra.jpeg" alt="" height="400px" width="800px">
+            <div class="button-row">
+                <a href=".html" class="btn-pink">Marathi</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Gujrat.jpeg" alt="" height="400px" width="800px">
+            <div class="button-row">
+                <a href=".html" class="btn-pink">Gujrati</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="south_indian.jpeg" alt="" height="400px" width="800px">
+            <div class="button-row">
+                <a href=".html" class="btn-pink">South Indian</a>
+            </div>
+        </div>
+        
     </div>
+</div>
+
+
+    <div id="chat-icon" onclick="toggleChat()">💬</div>
+
+<div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+        <strong>Garam Tadka AI 🌶️</strong>
+        <span onclick="toggleChat()" style="cursor:pointer;">✖</span>
+    </div>
+    <div class="chat-box" id="chatBox">
+        <div class="bot-msg">Namaste! I am your Indian Recipe Guide. Ask me for any recipe!</div>
+    </div>
+    <div class="chat-input-area">
+        <input type="text" id="userInput" placeholder="Ask for a recipe (e.g. Biryani)...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<script>
+    const recipes = {
+    // Rice & Biryanis
+    "biryani": "To make a delicious chicken biryani, first wash and soak 2 cups of basmati rice for about 20 minutes. In a large pot, boil water with salt, bay leaves, cloves, cardamom, and a small cinnamon stick, then add the rice and cook it until it is about 70% done before draining it. Meanwhile, heat oil and a little ghee in another pan, fry thinly sliced onions until golden brown, and then add ginger-garlic paste and green chilies. Add 500 grams of chicken along with salt, turmeric, red chili powder, garam masala, and biryani masala, and cook for a few minutes. Mix in a cup of curd and cook until the oil separates and the masala becomes thick. Add chopped mint and coriander leaves for freshness. Now begin layering: keep the chicken masala at the bottom of a heavy pot, spread half of the semi-cooked rice over it, sprinkle fried onions, mint, and saffron milk, then add the remaining rice on top and drizzle a little ghee. Cover the pot tightly and cook on very low flame for 15–20 minutes (dum), allowing the flavors to blend beautifully. Let it rest for 5 minutes before opening, then gently mix and serve hot with raita or salad.",
+    "pulao": "To prepare vegetable pulao, first wash and soak 1 cup of basmati rice for about 20 minutes. In a pressure cooker or deep pan, heat 1–2 tablespoons of oil or ghee, then add whole spices like 1 bay leaf, 2–3 cloves, 2 green cardamoms, a small cinnamon stick, and a few cumin seeds, letting them splutter for a few seconds. Add one thinly sliced onion and sauté until light golden, then mix in 1 teaspoon ginger-garlic paste and sauté briefly. Add chopped vegetables such as carrots, beans, peas, and potatoes, and cook them for 2–3 minutes with salt to taste, a pinch of turmeric, and a little garam masala. Drain the soaked rice and gently add it to the cooker, mixing carefully so the grains don’t break. Pour in about 2 cups of water, bring it to a boil, then cover and cook — if using a pressure cooker, cook for 1 whistle on medium flame and then switch off; if using a pan, cook covered on low flame until the rice is soft and the water is absorbed. Let it rest for 5 minutes before fluffing gently with a fork, and garnish with fresh coriander leaves. Serve hot with raita, pickle, or even plain curd — simple, aromatic, and comforting, just like a calm Sunday afternoon.",
+    "jeera rice": "To make jeera rice, first wash and soak 1 cup of basmati rice for about 20 minutes. In a pan or pressure cooker, heat 1–2 tablespoons of ghee (ghee gives the best aroma, but you can use oil too), then add 1 teaspoon cumin seeds and let them crackle gently — don’t burn them, just let them release that nutty fragrance. You can also add 1 bay leaf, 2 cloves, and a small cinnamon stick for extra flavor. Next, drain the soaked rice and add it carefully to the pan, sautéing lightly for about a minute so the grains get coated with ghee and cumin. Add 2 cups of water and salt to taste, bring it to a boil, then cover and cook on low flame until the water is absorbed and the rice is soft. If using a pressure cooker, cook for 1 whistle and then switch off. Let it rest for 5 minutes, then gently fluff the rice with a fork so the grains stay separate. Garnish with a little chopped coriander if you like, and serve hot with dal, paneer, or any curry — simple, fragrant, and comforting, like a warm hug in rice form.",
+
+    // North Indian Favorites
+    "paneer butter masala": "To make paneer butter masala, first heat 1–2 tablespoons of butter in a pan and add 1 bay leaf, a small cinnamon stick, and 2–3 green cardamoms for aroma. Add 1 chopped onion and sauté until soft, then mix in 1 teaspoon ginger-garlic paste and cook until the raw smell disappears. Add 2–3 chopped tomatoes (or tomato puree), a handful of cashews, ½ teaspoon turmeric, 1 teaspoon red chili powder, and salt to taste, and cook until the mixture becomes soft and slightly oily. Let this cool slightly, then blend it into a smooth paste. In the same pan, melt a little more butter, pour the blended gravy back in, and cook for a few minutes on low flame. Add 1 teaspoon garam masala and a little kasuri methi (crushed between your palms for fragrance). Stir in ½ cup fresh cream to make the gravy rich and silky, then add cubed paneer pieces and simmer gently for 5 minutes so the paneer absorbs the flavor. Adjust salt and consistency with a little warm water if needed. Finish with a small cube of butter on top and some fresh coriander. Serve hot with jeera rice or naan — creamy, mildly sweet, slightly spicy, and absolutely comforting… like something you’d order to celebrate a good semester result 💛✨",
+    "butter chicken": "To prepare butter chicken, first marinate 500 grams of chicken (preferably boneless) with 1 cup thick curd, 1 teaspoon ginger-garlic paste, ½ teaspoon turmeric, 1 teaspoon red chili powder, 1 teaspoon garam masala, salt, and a little lemon juice, and let it rest for at least 30 minutes (longer if you can). Then cook the marinated chicken in a pan with a little oil or butter until it is fully cooked and slightly charred at the edges; keep it aside. In another pan, melt 2 tablespoons butter and add 1 bay leaf, 2 green cardamoms, and a small cinnamon stick. Add 1 chopped onion and sauté until soft, then mix in ginger-garlic paste and cook briefly. Add 2–3 chopped tomatoes or tomato puree along with a handful of soaked cashews, cook until the mixture thickens and releases oil, then let it cool slightly and blend into a smooth paste. Pour this silky gravy back into the pan, add ½ cup fresh cream, 1 teaspoon kasuri methi (crushed), a little sugar to balance the tanginess, and salt if needed. Finally, add the cooked chicken pieces and simmer gently for 5–10 minutes so everything blends beautifully. Finish with a small knob of butter on top and some fresh coriander. Serve hot with naan or jeera rice — rich, creamy, slightly smoky, and honestly… pure comfort on a plate 💛🔥.",
+    "dal makhani": "To make dal makhani, soak 1 cup whole black urad dal and 2 tablespoons rajma overnight, then pressure cook them with salt until soft and creamy. In a pan, heat butter and a little oil, add cumin seeds and a bay leaf, then sauté finely chopped onions until golden. Add ginger-garlic paste and cook briefly, then mix in tomato puree, red chili powder, turmeric, and garam masala, cooking until the masala thickens and releases oil. Add the cooked dal with some of its water and simmer on very low flame for at least 20–30 minutes, stirring occasionally for that creamy texture. Stir in fresh cream and a generous spoon of butter at the end, crush some kasuri methi on top, and let it simmer a few more minutes before serving hot.",
+    "chole bhature": "For chole, soak 1 cup chickpeas overnight and pressure cook with salt and a tea bag (for dark color) until soft. In a pan, heat oil, add cumin seeds, chopped onions, ginger-garlic paste, and sauté well. Add tomato puree, turmeric, red chili powder, coriander powder, chole masala, and cook until oil separates. Add boiled chickpeas with some cooking water and simmer until thick and flavorful, finishing with garam masala and fresh coriander. For bhature, knead maida with curd, a little baking soda, salt, and water into a soft dough, rest it for 1–2 hours, roll into discs, and deep fry until puffed and golden. Serve hot together.",
+    "palak paneer": "Blanch spinach leaves in hot water for 2–3 minutes, then transfer to cold water and blend into a smooth puree. In a pan, heat oil or butter, add cumin seeds, chopped onions, and sauté until soft. Add ginger-garlic paste and green chilies, then mix in tomato puree and spices like turmeric, chili powder, and garam masala. Cook until the masala thickens, then add the spinach puree and simmer for a few minutes. Add paneer cubes and cook gently for 5 minutes so they absorb the flavor. Finish with a spoon of cream and a pinch of kasuri methi before serving.",
+
+    // West & East Indian (Including Bengali Favorites)
+    "pav bhaji": "Boil potatoes, peas, carrots, and cauliflower until soft, then mash them well. In a large pan, heat butter, sauté chopped onions, ginger-garlic paste, and green chilies until soft, then add chopped tomatoes and cook until mushy. Add turmeric, red chili powder, and pav bhaji masala, cooking until fragrant. Mix in the mashed vegetables, add water as needed, and cook while mashing further to get a smooth consistency. Finish with butter and fresh coriander. Toast pav buns with butter on a tawa and serve hot with bhaji, chopped onions, and lemon.",
+    "kosha mangsho": "Marinate mutton with curd, ginger-garlic paste, turmeric, red chili powder, and salt for at least 1 hour. In a heavy pan, heat mustard oil until smoking slightly, then add bay leaf, cinnamon, cardamom, and cloves. Fry sliced onions until deep brown, add a little sugar for caramelization, then add the marinated mutton and cook on medium flame, stirring continuously. Add coriander powder, cumin powder, and garam masala, and cook slowly until the oil separates and the meat turns dark and rich. Add a little warm water, cover, and cook until the mutton becomes tender and the gravy thickens into that signature dark kosha style.",
+    "shorshe ilish": "Marinate hilsa pieces with salt and turmeric for 10 minutes. Grind soaked mustard seeds with green chilies and a little salt into a smooth paste. Heat mustard oil lightly in a pan, then place the fish pieces carefully. Mix the mustard paste with a little water and pour over the fish, drizzle extra mustard oil on top, and add slit green chilies. Cover and cook on low flame for about 8–10 minutes without stirring too much, as hilsa is delicate. Serve hot with steamed rice for that authentic Bengali comfort meal.",
+
+    // South Indian Classics
+    "masala dosa": "Prepare a thin crepe from fermented rice-lentil batter. Stuff with a 'palya' (mashed potato tempering of mustard seeds, curry leaves, and turmeric).",
+    "sambar": "Boil pigeon peas (arhar dal) with tamarind pulp and vegetables. Add sambar powder and temper with mustard seeds, dried red chilies, and curry leaves.",
+    "chicken chettinad": "Roast and grind peppercorns, fennel, and coconut. Cook chicken in this spicy masala with plenty of curry leaves and small onions.",
+
+    // Street Food & Snacks
+    "samosa": "Stuff a pastry shell with a spicy mixture of mashed potatoes, peas, and coriander. Deep-fry until golden and crispy.",
+    "pani puri": "Fill hollow semolina puris with mashed potatoes/chickpeas and dip into a tangy 'teekha pani' made of mint, coriander, and tamarind.",
+
+    // Default Fallback
+    "default": "I'm sorry, I specialize only in Indian cuisine! Try asking for Biryani, Butter Chicken, or Shorshe Ilish."
+};
+
+
+function toggleChat() {
+    const chat = document.getElementById('chatContainer');
+    chat.style.display = chat.style.display === 'flex' ? 'none' : 'flex';
+}
+
+function sendMessage() {
+    const input = document.getElementById('userInput');
+    const chatBox = document.getElementById('chatBox');
+    if (input.value.trim() === "") return;
+
+    // Add User Message
+    chatBox.innerHTML += `<div class="user-msg">${input.value}</div>`;
+    
+    // Simple Logic for "Indian Food Only"
+    const query = input.value.toLowerCase();
+    let response = recipes["default"];
+
+    for (let dish in recipes) {
+        if (query.includes(dish)) {
+            response = recipes[dish];
+            break;
+        }
+    }
+
+    // Add Bot Response
+    setTimeout(() => {
+        chatBox.innerHTML += `<div class="bot-msg">${response}</div>`;
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }, 500);
+
+    input.value = "";
+}
+</script>
 </body>
 <footer>
     <div class="left">
